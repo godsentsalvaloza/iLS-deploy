@@ -1,0 +1,39 @@
+---
+title: Products
+layout: "base.njk"
+css: "../styles.css"
+---
+
+<!-- Main Content-->
+<main id="main-content">
+  <section id="product-flex-manager">
+    {%- for post in collections.post -%}
+
+    <div class="product-container">
+      <a
+        href="{{ post.data.product_shop_link }}"
+        class="products-redirect-link-confirm"
+        target="_blank"
+      >
+        <div class="image-product-container">
+          <img
+            src="{{ post.data.product_image }}"
+            alt="{{ post.data.product_image_alternative_text }}"
+            class="products-image-source"
+          />
+        </div>
+        <div class="text-product-container">
+          <h2>{{ post.data.product_name }}</h2>
+          <p>&#8369;{{ post.data.product_prize }}</p>
+          <p class="product-description">
+            {{ post.data.product_description }}
+          </p>
+          <p class="product-review">{{ post.data.product_review_score }}</p>
+        </div>
+      </a>
+    </div>
+
+    {%- endfor -%}
+  </section>
+</main>
+<!-- / Main Content-->
