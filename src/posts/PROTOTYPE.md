@@ -1,7 +1,7 @@
 ---
 product_shop_link: https://shopee.ph/Cone-Tip-Bite-size-Snacks-5-FLAVORS-PROMO-BUNDLE-(CONE-BITE-DELIGHTS)-Chocolate-Filled-Wafer-(120g)-i.1049185961.23484427198?sp_atk=a35f51a4-3ccf-4776-9d31-e73a654d4bec&xptdk=a35f51a4-3ccf-4776-9d31-e73a654d4bec
 
-product_image: /resources/main/products/coneBiteFiveFlavors.jpg
+product_image: /resources/main/uploads/coneBiteFiveFlavors.jpg
 
 product_image_alternative_text: Test
 
