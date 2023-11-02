@@ -15,6 +15,7 @@ collections:
       - { label: "Prize", name: "product_prize", widget: "string" }
       - { label: "Description", name: "product_description", widget: "string" }
       - { label: "Shop Link", name: "product_shop_link", widget: "string" }
+      - { label: "Review", name: "product_review_score", widget: "string" }
       - { label: "Image", name: "product_image", widget: "image" }
       - {
           label: "Image Alternative",
