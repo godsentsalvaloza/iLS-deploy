@@ -1,5 +1,5 @@
 ---
-tags: List [ "post" ]
+tags: post
 product_name: Test
 product_prize: Test
 product_description: Test
