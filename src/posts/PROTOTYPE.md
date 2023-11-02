@@ -3,7 +3,7 @@ product_shop_link: https://shopee.ph/Cone-Tip-Bite-size-Snacks-5-FLAVORS-PROMO-B
 product_image: /resources/main/uploads/coneBiteFiveFlavors.jpg
 product_image_alternative_text: Test
 product_name: Cone Bite Delights 5 Flavors Promo Bundle
-product_prize: "100"
+product_prize: "500"
 product_description: Introducing our delectable Cone Bite Snack 5 Pouches Promo
   Bundle! We've combined the best of five irresistable flavors to satisfy every
   craving!
