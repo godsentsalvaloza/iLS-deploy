@@ -22,7 +22,7 @@ nav#top-nav-bar {
 }
 footer div img,
 nav#top-nav-bar header img {
-  width: 125px;
+  width: 100px;
   padding: 0 10px;
 }
 footer div span,
@@ -66,11 +66,17 @@ a#header-logo-refer-link {
   display: flex;
   align-items: center;
 }
+a#header-logo-refer-link:hover {
+  text-decoration: none;
+  color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+}
 
 /* /Nav Bar */
 
 main#main-content {
-  padding-top: 105px;
+  padding-top: 80px;
 }
 
 /* Welcome Section*/
@@ -208,7 +214,7 @@ body {
 footer {
   margin-top: auto;
   background-color: var(--main-primary-color);
-  height: 8em;
+  height: 6em;
   display: flex;
   align-items: center;
   box-sizing: border-box;
