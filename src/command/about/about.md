@@ -1,6 +1,6 @@
 ---
 first_article_name: History
-first_article_description: cvcvcvcv
+first_article_description: test
 second_article_name: Mission
 second_article_description: To give the customer the best, most compelling and
   affordable shopping experience.
