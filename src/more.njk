@@ -8,16 +8,11 @@ css: "../styles.css"
 <main id="main-content">
   <section class="article-about">
     <!-- first container-->
+    {%- for post in collections.more -%}
     <div class="article-content-text">
-      <h2>More</h2>
+      <h2>{{ post.data.first_article_name }}</h2>
       <p>
-        This project is made by the members from Group 3 - ICTE-101P in
-        accordance to the iLS (i Learn and Share) project for computer
-        programming 1 / 2. The goal of this project is to provide a CMS (Content
-        management system) to a certain buisnss to improve its reach for its
-        customers. This project would not be possible without our client
-        CloudTech.ph and other resources that helped this project to become a
-        reality.
+        {{ post.data.first_article_description }}
       </p>
     </div>
   </section>
@@ -26,19 +21,19 @@ css: "../styles.css"
   <!-- second container-->
   <section class="article-about">
     <div class="article-content-text">
-      <h2>Members</h2>
+      <h2>{{ post.data.second_article_name }}</h2>
       <ul id="members-list">
-        <li>Obseñares - Researcher</li>
-        <li>Pinca - Researcher</li>
-        <li>Oclarino - Writer</li>
-        <li>Bitara - Writer</li>
-        <li>Gacita - Writer</li>
-        <li>Zamora - Presentation</li>
-        <li>Sauro - Programmer</li>
-        <li>Ebrada - Programmer</li>
-        <li>Del Rosario - Programmer</li>
-        <li>Manipor - Programmer</li>
-        <li>Salvaloza - Programmr</li>
+        <li>{{ post.data.memberA }}</li>
+        <li>{{ post.data.memberB }}</li>
+        <li>{{ post.data.memberC }}</li>
+        <li>{{ post.data.memberD }}</li>
+        <li>{{ post.data.memberE }}</li>
+        <li>{{ post.data.memberF }}</li>
+        <li>{{ post.data.memberG }}</li>
+        <li>{{ post.data.memberH }}</li>
+        <li>{{ post.data.memberI }}</li>
+        <li>{{ post.data.memberJ }}</li>
+        <li>{{ post.data.memberK }}</li>
       </ul>
     </div>
   </section>
@@ -47,10 +42,11 @@ css: "../styles.css"
   <!-- third container-->
   <section class="article-about">
     <div class="article-content-text">
-      <h2>Special Thanks</h2>
-      <p>CloudTech.ph</p>
+      <h2>{{ post.data.third_article_name }}</h2>
+      <p>{{ post.data.third_article_description }}</p>
     </div>
   </section>
+  {%- endfor -%}
   <!-- third container-->
 </main>
 <!-- / Main Content-->

@@ -70,3 +70,47 @@ collections:
           name: "fourth_article_description",
           widget: "string",
         }
+
+  - name: "more" # Used in routes, e.g., /admin/collections/blog
+    label: "More" # Used in the UI
+    folder: "src/command/more" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "More", name: "name", widget: "string" }
+      - {
+          label: "First Article Name",
+          name: "first_article_name",
+          widget: "string",
+        }
+      - {
+          label: "First Article Description",
+          name: "first_article_description",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Name",
+          name: "second_article_name",
+          widget: "string",
+        }
+      - { label: "Group Member", name: "memberA", widget: "string" }
+      - { label: "Group Member", name: "memberB", widget: "string" }
+      - { label: "Group Member", name: "memberC", widget: "string" }
+      - { label: "Group Member", name: "memberD", widget: "string" }
+      - { label: "Group Member", name: "memberE", widget: "string" }
+      - { label: "Group Member", name: "memberF", widget: "string" }
+      - { label: "Group Member", name: "memberG", widget: "string" }
+      - { label: "Group Member", name: "memberH", widget: "string" }
+      - { label: "Group Member", name: "memberI", widget: "string" }
+      - { label: "Group Member", name: "memberJ", widget: "string" }
+      - { label: "Group Member", name: "memberK", widget: "string" }
+      - {
+          label: "Third Article Name",
+          name: "third_article_name",
+          widget: "string",
+        }
+      - {
+          label: "Third Article Description",
+          name: "third_article_description",
+          widget: "string",
+        }
