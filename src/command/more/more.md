@@ -17,8 +17,8 @@ memberF: Zamora - Presentation
 memberG: Sauro - Programmer
 memberH: Ebrada - Programmer
 memberI: Del Rosario - Programmer
-memberJ: " "
-memberK: " "
+memberJ: " Manipor - Programmer"
+memberK: " Salvaloza - Programmer"
 third_article_name: Special Thanks
 tags:
   - more
