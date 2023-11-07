@@ -71,6 +71,65 @@ collections:
           widget: "string",
         }
 
+  - name: "homepage" # Used in routes, e.g., /admin/collections/blog
+    label: "Homepage" # Used in the UI
+    folder: "src/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "name", widget: "string" }
+      - {
+          label: "First Article Name",
+          name: "first_article_name",
+          widget: "string",
+        }
+      - {
+          label: "First Article Link",
+          name: "first_article_link",
+          widget: "string",
+        }
+      - {
+          label: "First Article Description",
+          name: "first_article_description",
+          widget: "string",
+        }
+      - {
+          label: "First Article Image Alternative",
+          name: "first_article_image_alternative",
+          widget: "string",
+        }
+      - {
+          label: "First Article Image",
+          name: "first_article_image",
+          widget: "image",
+        }
+
+      - {
+          label: "Second Article Name",
+          name: "second_article_name",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Link",
+          name: "second_article_link",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Description",
+          name: "second_article_description",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Image Alternative",
+          name: "second_article_image_alternative",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Image",
+          name: "second_article_image",
+          widget: "string",
+        }
+
   - name: "more" # Used in routes, e.g., /admin/collections/blog
     label: "More" # Used in the UI
     folder: "src/command/more" # The path to the folder where the documents are stored
