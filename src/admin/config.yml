@@ -39,7 +39,7 @@ collections:
         }
       - {
           label: "Facebook Page Link",
-          name: "facebook_page_link ",
+          name: "facebook_page_link",
           widget: "string",
         }
       - {
