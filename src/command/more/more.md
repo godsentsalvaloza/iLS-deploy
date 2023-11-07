@@ -8,7 +8,7 @@ first_article_description: This project is made by the members from Group 3 -
   customers. This project would not be possible without our client CloudTech.ph
   and other resources that helped this project to become a reality.
 second_article_name: Members
-memberA: " Obseñares - Researcher"
+memberA: " "
 memberB: " Pinca - Researcher"
 memberC: " Oclarino - Writer"
 memberD: " Bitara - Writer"
