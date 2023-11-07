@@ -5,33 +5,34 @@ css: "../styles.css"
 ---
 
 <!-- Main Content-->
+{%- for post in collections.contact -%}
 <main id="main-content">
   <!-- first container-->
   <section class="article-about">
     <div class="article-content-text">
-      <h2>Contact</h2>
+      <h2>{{ post.data.name }}</h2>
       <p>You can contact us in the following platforms below</p>
       <p>
         <i class="fa-regular fa-envelope"></i>
         Email:
-        <a href="mailto:cloudtech957@gmail.com" class="contact-links"
-          >cloudech957@gmail.com</a
-        >
+        <a href="mailto:{{ post.data.email_address }}" class="contact-links">{{
+          post.data.email_address
+        }}</a>
       </p>
-      <p><i class="fa-solid fa-phone"></i> Contact number: 09567540684</p>
+      <p>
+        <i class="fa-solid fa-phone"></i> Contact number:
+        {{ post.data.contact_number }}
+      </p>
       <p>
         <i class="fa-brands fa-facebook"></i>
         Facebook:
-        <a
-          href="https://www.facebook.com/profile.php?id=100070154114636"
-          class="contact-links"
-          >CloudTech.ph</a
-        >
+        <a href="{{ post.data.facebook_page_link }}" class="contact-links">{{
+          post.data.facebook_page_name
+        }}</a>
       </p>
       <p>
         <i class="fa-solid fa-location-dot"></i>
-        Address: Block 10 Lot 15, Dreamhouse, Brgy. Silangan, San Mateo, Rizal
-        1850
+        Address: {{ post.data.physical_address }}
       </p>
     </div>
   </section>
@@ -50,6 +51,7 @@ css: "../styles.css"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
   </section>
+  {%- endfor -%}
   <!-- second container-->
 </main>
 <!-- / Main Content-->

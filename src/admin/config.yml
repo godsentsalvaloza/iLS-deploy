@@ -23,6 +23,31 @@ collections:
           widget: "string",
         }
 
+  - name: "contact" # Used in routes, e.g., /admin/collections/blog
+    label: "Contact" # Used in the UI
+    folder: "src/command/contact" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "product_name", widget: "string" }
+      - { label: "Email Address", name: "email_address", widget: "string" }
+      - { label: "Contact Number", name: "contact_number", widget: "string" }
+      - {
+          label: "Facebook Page Name",
+          name: "facebook_page_name",
+          widget: "string",
+        }
+      - {
+          label: "Facebook Page Link",
+          name: "facebook_page_link ",
+          widget: "string",
+        }
+      - {
+          label: "Physical Address",
+          name: "physical_address",
+          widget: "string",
+        }
+
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "About" # Used in the UI
     folder: "src/command/about" # The path to the folder where the documents are stored
