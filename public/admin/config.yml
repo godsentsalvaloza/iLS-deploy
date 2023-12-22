@@ -1,0 +1,200 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: "public/resources/main/uploads"
+public_folder: "/resources/main/uploads"
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Products" # Used in the UI
+    folder: "src/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "product_name", widget: "string" }
+      - { label: "Identifier", name: "tags", widget: "string" }
+      - { label: "Prize", name: "product_prize", widget: "string" }
+      - { label: "Description", name: "product_description", widget: "string" }
+      - { label: "Shop Link", name: "product_shop_link", widget: "string" }
+      - { label: "Review", name: "product_review_score", widget: "string" }
+      - { label: "Image", name: "product_image", widget: "image" }
+      - {
+          label: "Image Alternative",
+          name: "product_image_alternative_text",
+          widget: "string",
+        }
+
+  - name: "contact" # Used in routes, e.g., /admin/collections/blog
+    label: "Contact" # Used in the UI
+    folder: "src/command/contact" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Email Address", name: "email_address", widget: "string" }
+      - { label: "Contact Number", name: "contact_number", widget: "string" }
+      - {
+          label: "Facebook Page Name",
+          name: "facebook_page_name",
+          widget: "string",
+        }
+      - {
+          label: "Facebook Page Link",
+          name: "facebook_page_link",
+          widget: "string",
+        }
+      - {
+          label: "Physical Address",
+          name: "physical_address",
+          widget: "string",
+        }
+
+  - name: "about" # Used in routes, e.g., /admin/collections/blog
+    label: "About" # Used in the UI
+    folder: "src/command/about" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "About", name: "name", widget: "string" }
+      - {
+          label: "First Article Name",
+          name: "first_article_name",
+          widget: "string",
+        }
+      - {
+          label: "First Article Description",
+          name: "first_article_description",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Name",
+          name: "second_article_name",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Desription",
+          name: "second_article_description",
+          widget: "string",
+        }
+      - {
+          label: "Third Article Name",
+          name: "third_article_name",
+          widget: "string",
+        }
+      - {
+          label: "Third Article Description",
+          name: "third_article_description",
+          widget: "string",
+        }
+      - {
+          label: "Fourth Article Name",
+          name: "fourth_article_name",
+          widget: "string",
+        }
+      - {
+          label: "Fourth Article Desription",
+          name: "fourth_article_description",
+          widget: "string",
+        }
+
+  - name: "homepage" # Used in routes, e.g., /admin/collections/blog
+    label: "Homepage" # Used in the UI
+    folder: "src/command/homepage" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "name", widget: "string" }
+      - {
+          label: "First Article Name",
+          name: "first_article_name",
+          widget: "string",
+        }
+      - {
+          label: "First Article Link",
+          name: "first_article_link",
+          widget: "string",
+        }
+      - {
+          label: "First Article Description",
+          name: "first_article_description",
+          widget: "string",
+        }
+      - {
+          label: "First Article Image Alternative",
+          name: "first_article_image_alternative",
+          widget: "string",
+        }
+      - {
+          label: "First Article Image",
+          name: "first_article_image",
+          widget: "image",
+        }
+
+      - {
+          label: "Second Article Name",
+          name: "second_article_name",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Link",
+          name: "second_article_link",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Description",
+          name: "second_article_description",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Image Alternative",
+          name: "second_article_image_alternative",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Image",
+          name: "second_article_image",
+          widget: "image",
+        }
+
+  - name: "more" # Used in routes, e.g., /admin/collections/blog
+    label: "More" # Used in the UI
+    folder: "src/command/more" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "More", name: "name", widget: "string" }
+      - {
+          label: "First Article Name",
+          name: "first_article_name",
+          widget: "string",
+        }
+      - {
+          label: "First Article Description",
+          name: "first_article_description",
+          widget: "string",
+        }
+      - {
+          label: "Second Article Name",
+          name: "second_article_name",
+          widget: "string",
+        }
+      - { label: "Group Member", name: "memberA", widget: "string" }
+      - { label: "Group Member", name: "memberB", widget: "string" }
+      - { label: "Group Member", name: "memberC", widget: "string" }
+      - { label: "Group Member", name: "memberD", widget: "string" }
+      - { label: "Group Member", name: "memberE", widget: "string" }
+      - { label: "Group Member", name: "memberF", widget: "string" }
+      - { label: "Group Member", name: "memberG", widget: "string" }
+      - { label: "Group Member", name: "memberH", widget: "string" }
+      - { label: "Group Member", name: "memberI", widget: "string" }
+      - { label: "Group Member", name: "memberJ", widget: "string" }
+      - { label: "Group Member", name: "memberK", widget: "string" }
+      - {
+          label: "Third Article Name",
+          name: "third_article_name",
+          widget: "string",
+        }
+      - {
+          label: "Third Article Description",
+          name: "third_article_description",
+          widget: "string",
+        }

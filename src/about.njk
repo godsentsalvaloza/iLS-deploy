@@ -8,9 +8,9 @@ import: "/command/about/"
 <main id="main-content">
   <!-- first container-->
   {%- for post in collections.about -%}
-  <section class="article-about">
+  <section class="article-about" data-aos="fade-in">
     <div class="article-content-text">
-      <h2>{{ post.data.first_article_name }}</h2>
+      <h2 id="history-head">{{ post.data.first_article_name }}</h2>
 
       <p id="history">{{ post.data.first_article_description }}</p>
     </div>
@@ -18,7 +18,7 @@ import: "/command/about/"
   <!-- /first container-->
 
   <!-- second container-->
-  <section class="article-about">
+  <section class="article-about" data-aos="fade-in">
     <div class="article-content-text">
       <h2>{{ post.data.second_article_name }}</h2>
       <p>
@@ -29,7 +29,7 @@ import: "/command/about/"
   <!-- second container-->
 
   <!-- third container-->
-  <section class="article-about">
+  <section class="article-about" data-aos="fade-in">
     <div class="article-content-text">
       <h2>{{ post.data.third_article_name }}</h2>
       <p>
@@ -40,7 +40,7 @@ import: "/command/about/"
   <!-- third container-->
 
   <!-- fourth container-->
-  <section class="article-about">
+  <section class="article-about" data-aos="fade-in">
     <div class="article-content-text">
       <h2>{{ post.data.fourth_article_name }}</h2>
       <p>{{ post.data.fourth_article_description }}</p>

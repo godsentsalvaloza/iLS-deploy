@@ -6,7 +6,7 @@ css: "../styles.css"
 
 <!-- Main Content-->
 <main id="main-content">
-  <section class="article-about">
+  <section class="article-about" data-aos="fade-in">
     <!-- first container-->
     {%- for post in collections.more -%}
     <div class="article-content-text">
@@ -19,7 +19,7 @@ css: "../styles.css"
   <!-- first container-->
 
   <!-- second container-->
-  <section class="article-about">
+  <section class="article-about" data-aos="fade-in">
     <div class="article-content-text">
       <h2>{{ post.data.second_article_name }}</h2>
       <ul id="members-list">
@@ -40,7 +40,7 @@ css: "../styles.css"
   <!-- second container-->
 
   <!-- third container-->
-  <section class="article-about">
+  <section class="article-about" data-aos="fade-in">
     <div class="article-content-text">
       <h2>{{ post.data.third_article_name }}</h2>
       <p>{{ post.data.third_article_description }}</p>

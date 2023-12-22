@@ -8,7 +8,7 @@ css: "../styles.css"
 <main id="main-content">
   {%- for post in collections.homepage -%}
   <!-- First container - Welcome Section-->
-  <section id="welcome-section">
+  <section id="welcome-section" data-aos="fade-in">
     <h1 id="header-title">CloudTech.ph</h1>
     <p>Provides a treat that can satisfy everyone's sweet tooth</p>
     <a href="/product">
@@ -18,7 +18,7 @@ css: "../styles.css"
   <!-- /First container - Welcome Section-->
 
   <!-- Second container-->
-  <section class="article-section">
+  <section class="article-section" data-aos="fade-in">
     <div>
       <a href="{{ post.data.first_article_link }}">
         <img
@@ -41,7 +41,7 @@ css: "../styles.css"
   <!-- /Second container-->
 
   <!-- Third container-->
-  <section class="article-section">
+  <section class="article-section" data-aos="fade-in">
     <div>
       <a href="{{ post.data.second_article_link }}">
         <img
