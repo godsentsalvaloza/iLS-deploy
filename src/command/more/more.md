@@ -13,12 +13,12 @@ memberB: Pinca - Researcher
 memberC: Oclarino - Writer
 memberD: Bitara - Writer
 memberE: Gacita - Writer
-memberF: Zamora - Presentation
-memberG: Sauro - Programmer
-memberH: Ebrada - Programmer
-memberI: Del Rosario - Programmer
-memberJ: Manipor - Programmer
-memberK: Salvaloza - Lead Developer
+memberF: Sauro - Programmer
+memberG: Ebrada - Programmer
+memberH: Del Rosario - Programmer
+memberI: Manipor - Programmer
+memberJ: Salvaloza - Lead Developer
+memberK: " "
 third_article_name: Special Thanks
 tags:
   - more
