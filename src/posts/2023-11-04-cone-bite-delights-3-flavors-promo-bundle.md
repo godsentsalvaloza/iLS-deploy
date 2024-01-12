@@ -1,5 +1,5 @@
 ---
-product_name: Cone Bite Delights 3 Flavors Promo Bundle
+product_name: Testing the CMS
 tags: post
 product_prize: "342"
 product_description: Finding it hard to choose a favorite? Get 3 different
