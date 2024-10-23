@@ -16,11 +16,9 @@ first_article_description:
 
 second_article_name: Members
 
-memberA: Obseñares - Researcher
-memberB: Pinca - Researcher
-memberC: Salvaloza - Lead Developer
-
+memberA: Marvielyn Obseñares - Researcher
+memberB: Adrian Joseph Pinca - Researcher
+memberC: Godsent John Salvaloza - Software Developer
 third_article_name: Special Thanks
-
 third_article_description: CloudTech.Ph
 ---
